@@ -18,66 +18,65 @@ to extract meaningful insights, visualize key trends, and understand content per
    - Studied most viewed videos, top channels, likes vs. views correlation, and publishing time patterns.
 
   OBJECTIVE
-•	To analyze Netflix and YouTube datasets to extract meaningful trends and insights.
-•	To compare the content characteristics and popularity patterns between Netflix and YouTube.
-•	To visualize the data for better understanding and presentation.
+1.	To analyze Netflix and YouTube datasets to extract meaningful trends and insights.
+2.	To compare the content characteristics and popularity patterns between Netflix and YouTube.
+3.	To visualize the data for better understanding and presentation.
 
  DATASET OVERVIEW
 Netflix Dataset
-•	Consists of titles available on Netflix.
-•	Includes columns like type, title, director, cast, country, date_added, release_year, rating, duration, listed_in, and description.
-•	Total rows: Approx. 8,000+ entries (based on common Netflix datasets).
+1.	Consists of titles available on Netflix.
+2.	Includes columns like type, title, director, cast, country, date_added, release_year, rating, duration, listed_in, and description.
+3.	Total rows: Approx. 8,000+ entries (based on common Netflix datasets).
 YouTube Dataset
-•	Contains trending video data for the US region.
-•	Includes fields like video_id, title, channel_title, category_id, publish_time, tags, views, likes, dislikes, comment_count, etc.
-•	Total rows: 40,949 and 16 columns (as observed).
+1.	Contains trending video data for the US region.
+2.	Includes fields like video_id, title, channel_title, category_id, publish_time, tags, views, likes, dislikes, comment_count, etc.
+3.	Total rows: 40,949 and 16 columns (as observed).
 
-4. DATA CLEANING (Phase 2)
+ DATA CLEANING (Phase 2)
 Netflix
-•	Removed rows with missing values.
-•	Standardized column names.
-•	Converted date_added to datetime and extracted year_added.
-•	Removed duplicates and formatted text columns.
+1.	Removed rows with missing values.
+2.	Standardized column names.
+3.	Converted date_added to datetime and extracted year_added.
+4.	Removed duplicates and formatted text columns.
 YouTube
-•	Replaced '[none]' with empty strings in the tags column.
-•	Converted title and tags to lowercase.
-•	Converted publish_time to datetime format.
-•	Extracted publish year and month.
+1.	Replaced '[none]' with empty strings in the tags column.
+2.	Converted title and tags to lowercase.
+3.	Converted publish_time to datetime format.
+4.	Extracted publish year and month.
 
-5. EDA & VISUALIZATIONS (Phase 3-4)
+ EDA & VISUALIZATIONS (Phase 3-4)
 Netflix
-•	Content Type Count: Count of Movies vs TV Shows.
-•	Year-wise Additions: Number of shows/movies added per year.
-•	Rating Distribution: Popular content ratings (TV-MA, PG-13, etc.).
-•	Top Countries: Countries with highest content production.
-•	Genre Count: Most common genres listed.
+1.	Content Type Count: Count of Movies vs TV Shows.
+2.	Year-wise Additions: Number of shows/movies added per year.
+3.	Rating Distribution: Popular content ratings (TV-MA, PG-13, etc.).
+4.	Top Countries: Countries with highest content production.
+5.	Genre Count: Most common genres listed.
 YouTube
-•	Top Channels: Channels with most trending videos.
-•	Most Viewed Videos: Top 10 videos by view count.
-•	Likes vs Views: Scatter plot to show correlation.
-•	Publish Month Trend: Distribution of trending videos across months.
+1.	Top Channels: Channels with most trending videos.
+2.	Most Viewed Videos: Top 10 videos by view count.
+3.	Likes vs Views: Scatter plot to show correlation.
+4.	Publish Month Trend: Distribution of trending videos across months.
 
-6. INSIGHTS (Phase 5)
+ INSIGHTS (Phase 5)
 Netflix
-•	Dominance of Movies: Movies constitute the majority of content.
-•	Content Surge in 2019-2020: Notable rise in content addition during these years.
-•	Major Genres: Drama, International, and Action are the leading categories.
-•	Rating Trends: TV-MA is the most frequent rating, indicating mature content.
+1.	Dominance of Movies: Movies constitute the majority of content.
+2.	Content Surge in 2019-2020: Notable rise in content addition during these years.
+3.	Major Genres: Drama, International, and Action are the leading categories.
+4.	Rating Trends: TV-MA is the most frequent rating, indicating mature content.
 YouTube
-•	Few Channels Dominate: A small number of channels consistently appear in trending lists.
-•	Engagement Peaks for Top Videos: High view count videos also exhibit high likes.
-•	Trending Peaks Around Festive Months: Most videos trend around October–December.
-•	Short Titles and Tags are Common: Indicates a preference for concise metadata.
+1.	Few Channels Dominate: A small number of channels consistently appear in trending lists.
+2.	Engagement Peaks for Top Videos: High view count videos also exhibit high likes.
+3.	Trending Peaks Around Festive Months: Most videos trend around October–December.
+4.	Short Titles and Tags are Common: Indicates a preference for concise metadata.
 
 
-7. CONCLUSION
+ CONCLUSION
 The analysis reveals platform-specific behaviors: Netflix trends toward mature and drama-heavy content, while YouTube thrives on channel branding and viewer engagement. Data visualization helped uncover valuable insights that can be used for content strategy, marketing, and user targeting.
 
-8. TOOLS AND TECHNOLOGIES USED
-•	Netflix Data Source: [Netflix Kaggle Dataset]
-•	YouTube Data Source: [USvideos.csv Kaggle Dataset]
-•	Python Libraries: Pandas, NumPy, Seaborn, Matplotlib
-•	Platform: Jupyter Notebook
+ TOOLS AND TECHNOLOGIES USED
+1.	Netflix Data Source: [Netflix Kaggle Dataset]
+2.	YouTube Data Source: [USvideos.csv Kaggle Dataset]•	Python Libraries: Pandas, NumPy, Seaborn, Matplotlib
+3.	Platform: Jupyter Notebook
 
 AUTHOR
 Kumud Kataria
